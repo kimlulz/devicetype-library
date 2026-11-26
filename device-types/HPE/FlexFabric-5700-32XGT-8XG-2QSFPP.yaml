@@ -6,6 +6,8 @@ part_number: JG898A
 u_height: 1
 is_full_depth: false
 comments: '[HPE FlexFabric 5700 Switch Series - Specification](https://support.hpe.com/hpesc/public/docDisplay?docId=c04400247)'
+weight: 10
+weight_unit: kg
 console-ports:
   - name: console
     type: rj-45
@@ -21,8 +23,9 @@ module-bays:
   - name: Fan2
     position: Fan2
 interfaces:
-  - name: Ten-GigabitEthernet1/0/0
-    type: 10gbase-t
+  - name: Management
+    type: 1000base-t
+    mgmt_only: true
   - name: Ten-GigabitEthernet1/0/1
     type: 10gbase-t
   - name: Ten-GigabitEthernet1/0/2
